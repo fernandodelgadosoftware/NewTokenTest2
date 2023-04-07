@@ -62,7 +62,7 @@ namespace WebsiteStatus
 
                 else
                 {
-                    _logger.LogError("The website is down. Status code {StatusCode}", result.StatusCode);
+                    _logger.LogError("The website is down. Status Code {StatusCode}", result.StatusCode);
                 }
                 await Task.Delay(1000, stoppingToken);
 
